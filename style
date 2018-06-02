@@ -1,0 +1,139 @@
+table,td,th,ul,div,a,p,header,main,button,footer,input,textarea {
+    margin: 0;
+    padding: 0;
+}
+
+ul,li {
+    list-style: none;
+}
+table {
+    width: 100%;
+    /*border: 1px solid #ddd;*/
+    color: #555;
+}
+table tr {
+    height: 40px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+table th {
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+table tr td {
+    height: 40px;
+    font-size: 15px;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-indent: 0.5em;
+    word-break:break-all;
+}
+input[type="file"] {
+    height: 40px;
+    line-height: 40px;
+}
+textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 0;
+    padding: 5px;
+}
+a {
+    text-decoration: none;
+}
+select {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+select option {
+    height: 40px;
+    line-height: 40px;
+}
+header {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+span {
+    display: block;
+}
+header span {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0;
+    cursor: pointer;
+}
+p{
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+
+
+footer {
+    height: 60px;
+    margin: 30px auto;
+    line-height: 60px;
+    text-align: center;
+    box-sizing: border-box;
+}
+button {
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: #40AFFE;
+    color: #fff;
+}
+input[type='submit'], input[type='reset'] {
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: #40AFFE;
+    color: #fff;
+}
+input[type='search'] {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    /*position: relative;*/
+}
+
+/*input里面自定义的样式*/
+input:-webkit-autofill {
+    background-color: rgb(250, 255, 189);
+    background-image: none;
+    color: rgb(0, 0, 0);
+}
+/*添加自定义样式，覆盖input的默认样式*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.clearfix:after {
+    /*设置内容为空、高度为0、行高为0、将文本转为块级元素、将元素隐藏、清除浮动*/
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix {
+    zoom:1;
+}
